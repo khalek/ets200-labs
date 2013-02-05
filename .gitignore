@@ -1,4 +1,5 @@
 *.class
+*.pdf
 
 # Package Files #
 *.jar
@@ -7,3 +8,6 @@
 
 # Eclipse files #
 .metadata
+
+# Folders
+cfg
