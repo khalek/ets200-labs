@@ -1,7 +1,8 @@
 \documentclass[a4paper]{article}
 
-\usepackage[utf8]{inputenc}
 \usepackage{graphics}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
 
 \title{Lab Preparation 2}
 \author{}
@@ -67,9 +68,9 @@ To cover all the paths, test cases only has to go into each statement block. To 
     \end{center}
 \end{figure}
 
-\begin{figure}[htpb!]
+\begin{figure}[h!]
     \begin{center}
-        \resizebox{16 cm}{!}{\includegraphics{run.png}}
+        \resizebox{13.6 cm}{!}{\includegraphics{run.png}}
         \caption{Flow graph for method \texttt{run(int, int, int)}.}
         \label{figure:run}
     \end{center}
@@ -121,7 +122,7 @@ Third method is a bit more complicated then the previous one with a total number
 
 The method that checks if the current month has thirty days is a bit tricky. It might seem that we would have to produce test cases for each possible condition, but that's not entirely true. 
 
-Since they are all compared between OR-operators, the first value to give \emph{true} will satisfy the IF-statement. To cover all the decisions and the branches it will only be required to test all the values of a month that will result in a truth, as well as one test were \emph{false} is returned.
+Since they are all compared between OR-operators, the first value to give \textbf{true} will satisfy the IF-statement. To cover all the decisions and the branches it will only be required to test all the values of a month that will result in a truth, as well as one test were \textbf{false} is returned.
 
 \begin{table}[h]
 	\begin{tabular}{l}
@@ -165,7 +166,30 @@ The last method is the most complicated one. Actually it is not a very good writ
 	\end{tabular}
 \end{table}
 
-The next set of test cases should now be created to take the right path instead.
+The next set of test cases should now be created to take the right path instead. We will also have the opportunity to reuse the test cases for each of the private methods. If we consider the outer block of the next IF-statement the program performs checks on the current month. 
+
+The test cases written last in this section will be the ones that are going to be implemented. This is because the method \texttt{run} is the only public method, which means the rest cannot be accessed from without the class, for example, from a test class.
+
+If we want to have \textbf{true} returned we have to make sure to use the same cases as before. However, it is possible to combine the cases which returns \textbf{false} from one method with a case that return \textbf{true} for another method. 
+
+\begin{table}[h]
+	\begin{tabular}{l}
+		Test Case\\
+		run(*, 1, *)\\
+		run(*, 2, *)\\
+		run(*, 3, *)\\
+		run(*, 4, *)\\
+		run(*, 5, *)\\
+		run(*, 6, *)\\
+		run(*, 8, *)\\
+		run(*, 9, *)\\
+		run(*, 10, *)\\
+		run(*, 11, *)\\
+		run(*, 12, *)\\
+	\end{tabular}
+\end{table}
+
+Next we can move forward with days. The next block of IF-statements performs checks if the day depending on the month.
 
 
 \end{document}
