@@ -1,5 +1,4 @@
 *.class
-*.pdf
 
 # Package Files #
 *.jar
@@ -11,3 +10,8 @@
 
 # Folders
 cfg
+
+# TeX related files
+*.pdf
+*.aux
+*.log
