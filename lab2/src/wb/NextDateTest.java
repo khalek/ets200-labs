@@ -68,8 +68,8 @@ public class NextDateTest {
 	}
 	
 	@Test
-	public void almostLastDayLeapYear() {
-		assertEquals("Should return \"02/29/1900\"","02/29/1900", date.run(2,28,1900));
+	public void lastDayTwentyEight() {
+		assertEquals("Should return \"03/01/1900\"","03/01/1900", date.run(2,28,1900));
 	}
 	
 	@Test
