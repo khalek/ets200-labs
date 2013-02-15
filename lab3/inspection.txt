@@ -27,7 +27,7 @@ According to specification, state "Waiting for customer" initiates without accep
 
 Use case 2.6. Taxi: Driving a customer
 3.1.13 incorrectly says that system calculates ETA.
-1. in positioning system says that car only sends position when changing zone.
+"1." in positioning system says that car only sends position when changing zone.
 
 Use case 2.7. Central: Handle incoming alarms
 3.2.7 is a copy of 3.1.17. Same goes for 3.2.8 and 3.1.18.
@@ -43,5 +43,12 @@ Missing specification regarding automatic dispatch being default.
 3.2.15 incorrectly states "dispatch to the operator", should be "by the operator?".
 No requirement of taxi number as the criteria for selection.
 Missing requirement regarding automatic confirmation on accepted orders, both to car and operator.
+
+Total faults found: 19.
+
+Minimum number of faults left: 3
+Minimum number of faults left: 10
+
+Most probable number of faults left: 5
 
 
