@@ -7,48 +7,68 @@ Total time: 1 h 30 min
 Faults
 
 Use case 2.1. Taxi: Submit Order
-No requirement for driver regarding orders submitted via the terminal in the car.
+No requirement for driver regarding orders submitted via the terminal in the car. X
 
 Use case 2.2. Central: Submit Order
-Requirement 3.2.16 fails to explicitly define that orders need to be close in time.
+Requirement 3.2.16 fails to explicitly define that orders need to be close in time. (Wrong)
 
 Use case 2.3. Central: Display traffic overview
-"The terminal" not defined for operator.
+"The terminal" not defined for operator. X
 
 Use case 2.4. Taxi: Log in
-"Identification cards" not defined for driver.
-3.1.3 incorrectly states that car number is (also) used to confirm log in.
+"Identification cards" not defined for driver. X
+3.1.3 incorrectly states that car number is (also) used to confirm log in. X
 3.1.6 incorrectly states that position is sent while logging in.
 
 Use case 2.5. Taxi: Receive order
-Again, "terminal" not defined.
-Requirement 3.1.24 states that system confirms submitted orders, not central.
-According to specification, state "Waiting for customer" initiates without accepted and confirmed orders.
+Again, "terminal" not defined. X
+Requirement 3.1.24 states that system confirms submitted orders, not central. (Wrong?)
+According to specification, state "Waiting for customer" initiates without accepted and confirmed orders. X
 
 Use case 2.6. Taxi: Driving a customer
 3.1.13 incorrectly says that system calculates ETA.
 "1." in positioning system says that car only sends position when changing zone.
 
 Use case 2.7. Central: Handle incoming alarms
-3.2.7 is a copy of 3.1.17. Same goes for 3.2.8 and 3.1.18.
+3.2.7 is a copy of 3.1.17. Same goes for 3.2.8 and 3.1.18. X
 
 Use case 2.8. Taxi: Alarm event
 Possible colision in requirement 3.1.33 regarding who terminates the voice communication
 
 Use case 2.9. Taxi: View traffic overview
-Specifiactions on "terminal" missing.
+Specifiactions on "terminal" missing. X
 
 Use case 2.10. Taxi: Dispatch order
 Missing specification regarding automatic dispatch being default.
-3.2.15 incorrectly states "dispatch to the operator", should be "by the operator?".
+3.2.15 incorrectly states "dispatch to the operator", should be "by the operator?". X
 No requirement of taxi number as the criteria for selection.
 Missing requirement regarding automatic confirmation on accepted orders, both to car and operator.
 
-Total faults found: 19.
+Total faults found: 17.
 
 Minimum number of faults left: 3
 Minimum number of faults left: 10
 
 Most probable number of faults left: 5
+
+Common faults: 9
+Non-common: 8
+
+Paired as two
+
+total faults: 20
+
+m0 = 22
+mt = 22
+mh = 24
+
+Paired as four
+
+total fault: 27
+
+m0four = 35
+mtfour = 33
+mhfour = 35
+
 
 
